@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
+  public appPages = [
+    { title: 'Pessoas cadastradas', url: '/pessoa', icon: 'person' },
+    { title: 'Cadastrar pessoa', url: '/add-pessoa', icon: 'person-add' },
+  ];
 
   constructor() { }
 

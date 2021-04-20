@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/add-pessoa/add-pessoa.module').then( m => m.AddPessoaPageModule)
   },
   {
+    path: 'add-pessoa/:id',
+    loadChildren: () => import('./pages/add-pessoa/add-pessoa.module').then( m => m.AddPessoaPageModule)
+  },
+  {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   }
